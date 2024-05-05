@@ -15,14 +15,25 @@
             fontFamily: {
               sans: ["Inter var", ...defaultTheme.fontFamily.sans],
             },
+            colors: {
+              primary: "#2563eb",
+              secondary: "#93c5fd",
+              accent: "#164e63",
+              neutral: "#0ea5e9",
+              background: "#f3f4f6",
+              info: "#0000ff",
+              success: "#10b981",
+              warning: "#facc15",
+              error: "#ef4444",
+            },
           },
         },
         // ...
       };
     </script>
   </head>
-  <body class="flex flex-col items-center min-h-screen p-4">
-    <nav class="flex justify-center space-x-4">
+  <body class="flex flex-col items-center min-h-screen p-4 bg-background">
+    <nav class="flex justify-center space-x-4 rounded-lg bg-blue-100">
       <a
         href="#"
         class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900"
