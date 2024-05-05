@@ -4,9 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Workshop project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <script>
+      const defaultTheme = require("tailwindcss/defaultTheme");
+
+      module.exports = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+            },
+          },
+        },
+        // ...
+      };
+    </script>
   </head>
-  <body>
-    <h1>Hello world</h1>
-    <p>🔧 THIS IS CURRENTLY IN DEVELOPMENT</p>
+  <body class="flex flex-col items-center min-h-screen p-4">
+    <nav class="flex justify-center space-x-4">
+      <a
+        href="#"
+        class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900"
+        >Home</a
+      >
+      <a
+        href="#"
+        class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900"
+        >Team</a
+      >
+      <a
+        href="#"
+        class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900"
+        >Projects</a
+      >
+      <a
+        href="#"
+        class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900"
+        >Reports</a
+      >
+    </nav>
+
+    <section class="max-w-96">
+      This is my main content Lorem ipsum dolor sit, amet consectetur
+      adipisicing elit. At pariatur minima provident eaque impedit ex voluptatem
+      repellendus rem dicta accusamus earum eum, molestiae quod sint repellat
+      vero. Porro, accusamus ducimus.
+    </section>
   </body>
 </html>
